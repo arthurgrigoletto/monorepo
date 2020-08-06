@@ -7,5 +7,4 @@ const app = express()
 app.use(cors())
 app.use(routes)
 
-// Test pipeline
 app.listen(3333, () => console.log('Server running'))
