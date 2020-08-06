@@ -6,6 +6,7 @@ on:
       - master
     paths:
       - 'packages/server/**'
+      # - 'packages/another-package/**'
 
 jobs:
   deploy:
@@ -13,10 +14,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkou@v2
+        uses: actions/checkout@v2
 
       - name: Setup Node.js
-        users: actions/setup-node@v1
+        uses: actions/setup-node@v1
         with:
           node-version: 12.x
 
